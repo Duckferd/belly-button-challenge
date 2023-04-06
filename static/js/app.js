@@ -58,13 +58,19 @@ function init() {
         title: '<b>Bubble Chart</b>',
         automargin: true,
         autosize: true,
+        xaxis: {title: 'OTU ID'}
     };
+    
     var data2 = [trace2];
     Plotly.newPlot('bubble',data2,layout2);
 
   });
   };
+
   
+
+
+
 //Updating Dropdown
   function update(id) {
     d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json").then(function (data) {
@@ -125,6 +131,7 @@ function init() {
             title: '<b>Bubble Chart</b>',
             automargin: true,
             autosize: true,
+            xaxis: {title: 'OTU ID'}
         };
         var data2 = [trace2];
         Plotly.newPlot('bubble', data2,layout2)
